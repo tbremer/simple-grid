@@ -1,0 +1,9 @@
+@function margin-size ($max-width, $margin-size) {
+	@if unit($max-width) == unit($margin-size) {
+		@return $margin-size;
+	}
+
+	@if unit($margin-size) == '%' {
+		@return #{strip-unit($max-width) * (strip-unit($margin-size) / 100)}unquote(unit($margin-size));
+	}
+}

@@ -1,0 +1,20 @@
+$default-grid-settings: (
+	'attribute': 'col-span',
+	'wrapper': 'row',
+	// COL CONFIG
+	'column-count': 12,
+	'margin-width': 5px,
+	// SIZING
+	'max-width': 1444px,
+	'provide-min-width': false,
+	'percent-based': true,
+	// MISC CONFIGS
+	'separate-rows': false
+);
+$grid-settings: () !default;
+
+$grid-debug: false !default;
+$grid-wrapper-debug: false !default;
+$grid-col-debug: false !default;
+
+$settings: map-merge($default-grid-settings, $grid-settings);

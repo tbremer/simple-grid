@@ -1,0 +1,13 @@
+$grid-settings: (
+	// max-width: 100%,
+	column-count: 12,
+	separate-rows: true,
+	// margin-width: 3%,
+	// provide-min-width: true
+	// percent-based: false
+);
+$grid-col-debug: true;
+// $grid-debug: true;
+
+@import "../grid";
+

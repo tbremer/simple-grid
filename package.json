@@ -1,0 +1,21 @@
+{
+  "name": "simple-grid",
+  "version": "0.1.0",
+  "description": "Simple SASS grid system",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tbremer/simple-grid.git"
+  },
+  "keywords": [
+    "scss",
+    "sass",
+    "grid",
+    "css3"
+  ],
+  "author": "Thomas Bremer <tom@tbremer.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tbremer/simple-grid/issues"
+  },
+  "homepage": "https://github.com/tbremer/simple-grid"
+}

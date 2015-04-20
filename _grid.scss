@@ -1,0 +1,47 @@
+@import "functions";
+@import "mixins";
+@import "settings/settings";
+
+.#{get(wrapper)} {
+	display: block;
+	box-sizing: border-box;
+	width: get(max-width);
+	@include clearfix;
+	@if $grid-debug == true or $grid-wrapper-debug == true {
+		@include debug(1, -1);
+	}
+	@if get(separate-rows) {
+		+ .#{get(wrapper)} {
+			margin-top: (get(margin-width) * 1.5);
+		}
+	}
+
+	[#{get(attribute)}] {
+		float: left;
+		box-sizing: border-box;
+		margin: 0 (get(margin-width) / 2);
+		&:last-child {
+			float: right;
+		}
+	}
+
+	@for $i from 1 through get(column-count) {
+		[#{get(attribute)}="#{$i}"] {
+			$width-px: (get(max-width) * ($i / get(column-count)) - get(margin-width));
+			@if get(provide-min-width) {
+				min-width: $width-px;
+			}
+
+			@if get(percent-based) {
+				width: percentage($width-px / get(max-width));
+			} @else {
+				width: $width-px;
+			}
+
+			@if $grid-debug == true or $grid-col-debug == true {
+				@include debug(1);
+			}
+		}
+	}
+}
+
