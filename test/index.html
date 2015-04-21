@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div id="content-wrap" style="width:1244px;"></div>
+
+    <script>
+        var sumsets = function (arr, total, answ, results) {
+            var i = 0;
+            answ = answ || [];
+            results = results || [];
+
+            for (; i < arr.length; i++) {
+                var temp = arr[i],
+                    remainder = total,
+                    curAnsw = answ.slice();
+                while(remainder >= 0) {
+                    remainder -= temp;
+                    if (!remainder) {
+                        results.push(curAnsw);
+                    } else {
+                        curAnsw.push(temp);
+                    }
+
+                    sumsets(arr.slice(i+1), remainder, curAnsw, results);
+                }
+            }
+
+            return results.sort();
+        };
+
+        var nodes = sumsets([1,2,3,4,5,6,7,8,9,10,11,12], 12),
+            html = '';
+            node = document.getElementById('content-wrap');
+
+
+        nodes.forEach(function (el) {
+            var str = '<section class="row">'
+            el.forEach(function (el) {
+                str += '<div col-span="'+el+'">'+el+'</div>';
+            });
+            str += '</section>';
+            html += str;
+        });
+
+        node.innerHTML = html;
+    </script>
+</body>
+</html>

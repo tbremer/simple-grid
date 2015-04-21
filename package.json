@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/tbremer/simple-grid/issues"
   },
-  "homepage": "https://github.com/tbremer/simple-grid"
+  "homepage": "https://github.com/tbremer/simple-grid",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^3.1.0"
+  }
 }

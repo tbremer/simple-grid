@@ -8,12 +8,12 @@
 	width: get(max-width);
 	@include clearfix;
 	@if $grid-debug == true or $grid-wrapper-debug == true {
-		@include debug(1, -1);
+		@include debug(.2, -1);
 	}
-	
+
 	@if get(separate-rows) {
 		+ .#{get(wrapper)} {
-			margin-top: (get(margin-width) * 1.5);
+			margin-top: (get(margin-width) * .5);
 		}
 	}
 
@@ -21,9 +21,6 @@
 		float: left;
 		box-sizing: border-box;
 		margin: 0 (get(margin-width) / 2);
-		&:last-child {
-			float: right;
-		}
 	}
 
 	@for $i from 1 through get(column-count) {
@@ -40,7 +37,7 @@
 			}
 
 			@if $grid-debug == true or $grid-col-debug == true {
-				@include debug(1);
+				@include debug(1, -1);
 			}
 		}
 	}

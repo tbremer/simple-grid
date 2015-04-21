@@ -1,0 +1,21 @@
+# EDITORCONFIG IS AWESOME
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+indent_style = space
+
+# JAVASCRIPT
+[*.{js,json, jsx}]
+indent_size = 2
+
+# SCSS OR SASS
+[*.{sass,scss}]
+indent_size = 4
+
+# HTML, HBS
+[*.{html, hbs}]
+indent_size = 4
