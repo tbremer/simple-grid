@@ -1,6 +1,6 @@
-@import "functions";
-@import "mixins";
-@import "settings/settings";
+@import "lib/functions";
+@import "lib/mixins";
+@import "lib/settings";
 
 .#{get(wrapper)} {
 	display: block;
@@ -10,6 +10,7 @@
 	@if $grid-debug == true or $grid-wrapper-debug == true {
 		@include debug(1, -1);
 	}
+	
 	@if get(separate-rows) {
 		+ .#{get(wrapper)} {
 			margin-top: (get(margin-width) * 1.5);
