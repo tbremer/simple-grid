@@ -2,47 +2,50 @@
 @import "lib/mixins";
 @import "lib/settings";
 
-$base-width: (100/get(column-count) + strip-unit(get(margin-width)) / get(column-count));
-@warn $base-width;
+@mixin grid-maker {
+    $base-width: (100/get(column-count) + strip-unit(get(margin-width)) / get(column-count));
 
-.#{get(wrapper)} {
-    display: block;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: get(max-width);
-    @include clearfix;
-    @if $grid-debug == true or $grid-wrapper-debug == true {
-        @include debug(.2, -1);
-    }
-
-    @if get(separate-rows) {
-        + .#{get(wrapper)} {
-            margin-top: (get(margin-width) * .5);
-        }
-    }
-
-    [#{get(attribute)}] {
+    .#{get(wrapper)} {
+        display: block;
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
-        float: left;
-        margin: 0 0 0 get(margin-width);
-        &:first-child {
-            margin-left: 0;
+        width: get(max-width);
+        @include clearfix;
+        @if $grid-debug == true or $grid-wrapper-debug == true {
+            @include debug(.2, -1);
         }
-    }
+        @if get(separate-rows) {
+            margin-top: get(margin-width);
+            margin-bottom: (get(margin-width) * .75);
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
 
-    @for $i from 1 through get(column-count) {
 
-        $width: percentage(($base-width * $i)/100) - get(margin-width);
-        @warn $width;
+        [#{get(attribute)}] {
+            box-sizing: border-box;
+            float: left;
+            margin: 0 0 0 get(margin-width);
+            &:first-child {
+                margin-left: 0;
+            }
+        }
 
-        [#{get(attribute)}="#{$i}"] {
-            width: $width;
+        @for $i from 1 through get(column-count) {
+            $width: percentage(($base-width * $i)/100) - get(margin-width);
 
-            @if $grid-debug == true or $grid-col-debug == true {
-                @include debug(1, -1);
+            [#{get(attribute)}="#{$i}"] {
+                width: $width;
+
+                @if $grid-debug == true or $grid-col-debug == true {
+                    @include debug(1, -1);
+                }
             }
         }
     }
-}
-
+};

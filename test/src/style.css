@@ -1,191 +1,195 @@
-.row {
-  display: block;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: 100%;
-  position: relative; }
-  .row:before, .row::before, .row:after, .row::after {
-    content: " ";
-    display: table; }
-  .row:after, .row::after {
-    clear: both; }
-  .row:before {
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: rgba(13, 36, 242, 0.2);
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; }
-  .row + .row {
-    margin-top: 0.8%; }
-  .row [col-span] {
-    box-sizing: border-box;
-    float: left;
-    margin: 0 0 0 1.6%; }
-    .row [col-span]:first-child {
-      margin-left: 0; }
-  .row [col-span="1"] {
-    width: 6.86667%;
-    position: relative; }
-    .row [col-span="1"]:before {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: #520df2;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
-  .row [col-span="2"] {
-    width: 15.33333%;
-    position: relative; }
-    .row [col-span="2"]:before {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: #18f20d;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
-  .row [col-span="3"] {
-    width: 23.8%;
-    position: relative; }
-    .row [col-span="3"]:before {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: #280df2;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
-  .row [col-span="4"] {
-    width: 32.26667%;
-    position: relative; }
-    .row [col-span="4"]:before {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: #f2180d;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
-  .row [col-span="5"] {
-    width: 40.73333%;
-    position: relative; }
-    .row [col-span="5"]:before {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: #f2d70d;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
-  .row [col-span="6"] {
-    width: 49.2%;
-    position: relative; }
-    .row [col-span="6"]:before {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: #550df2;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
-  .row [col-span="7"] {
-    width: 57.66667%;
-    position: relative; }
-    .row [col-span="7"]:before {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: #f20d8b;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
-  .row [col-span="8"] {
-    width: 66.13333%;
-    position: relative; }
-    .row [col-span="8"]:before {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: #f20dc1;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
-  .row [col-span="9"] {
-    width: 74.6%;
-    position: relative; }
-    .row [col-span="9"]:before {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: #f20daa;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
-  .row [col-span="10"] {
-    width: 83.06667%;
-    position: relative; }
-    .row [col-span="10"]:before {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: #0d5df2;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
-  .row [col-span="11"] {
-    width: 91.53333%;
-    position: relative; }
-    .row [col-span="11"]:before {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: #65f20d;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
-  .row [col-span="12"] {
-    width: 100%;
-    position: relative; }
-    .row [col-span="12"]:before {
-      content: '';
-      display: block;
-      position: absolute;
-      background-color: #f20db1;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1; }
-
 #content-wrap {
+  width: 1244px;
   margin: 0 auto; }
+  #content-wrap .row {
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    margin-top: 1.6%;
+    margin-bottom: 1.2%; }
+    #content-wrap .row:before, #content-wrap .row::before, #content-wrap .row:after, #content-wrap .row::after {
+      content: " ";
+      display: table; }
+    #content-wrap .row:after, #content-wrap .row::after {
+      clear: both; }
+    #content-wrap .row:before {
+      content: '';
+      display: block;
+      position: absolute;
+      background-color: rgba(55, 242, 13, 0.2);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; }
+    #content-wrap .row:first-child {
+      margin-top: 0; }
+    #content-wrap .row:last-child {
+      margin-bottom: 0; }
+    #content-wrap .row [col-span] {
+      box-sizing: border-box;
+      float: left;
+      margin: 0 0 0 1.6%; }
+      #content-wrap .row [col-span]:first-child {
+        margin-left: 0; }
+    #content-wrap .row [col-span="1"] {
+      width: 6.86667%;
+      position: relative; }
+      #content-wrap .row [col-span="1"]:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #0df246;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; }
+    #content-wrap .row [col-span="2"] {
+      width: 15.33333%;
+      position: relative; }
+      #content-wrap .row [col-span="2"]:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #f24a0d;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; }
+    #content-wrap .row [col-span="3"] {
+      width: 23.8%;
+      position: relative; }
+      #content-wrap .row [col-span="3"]:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #0d8ff2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; }
+    #content-wrap .row [col-span="4"] {
+      width: 32.26667%;
+      position: relative; }
+      #content-wrap .row [col-span="4"]:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #f20d87;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; }
+    #content-wrap .row [col-span="5"] {
+      width: 40.73333%;
+      position: relative; }
+      #content-wrap .row [col-span="5"]:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #0db9f2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; }
+    #content-wrap .row [col-span="6"] {
+      width: 49.2%;
+      position: relative; }
+      #content-wrap .row [col-span="6"]:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #c8f20d;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; }
+    #content-wrap .row [col-span="7"] {
+      width: 57.66667%;
+      position: relative; }
+      #content-wrap .row [col-span="7"]:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #f2180d;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; }
+    #content-wrap .row [col-span="8"] {
+      width: 66.13333%;
+      position: relative; }
+      #content-wrap .row [col-span="8"]:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #f20d87;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; }
+    #content-wrap .row [col-span="9"] {
+      width: 74.6%;
+      position: relative; }
+      #content-wrap .row [col-span="9"]:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #c40df2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; }
+    #content-wrap .row [col-span="10"] {
+      width: 83.06667%;
+      position: relative; }
+      #content-wrap .row [col-span="10"]:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #0df269;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; }
+    #content-wrap .row [col-span="11"] {
+      width: 91.53333%;
+      position: relative; }
+      #content-wrap .row [col-span="11"]:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #200df2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; }
+    #content-wrap .row [col-span="12"] {
+      width: 100%;
+      position: relative; }
+      #content-wrap .row [col-span="12"]:before {
+        content: '';
+        display: block;
+        position: absolute;
+        background-color: #5d0df2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; }
 
 /*# sourceMappingURL=style.css.map */

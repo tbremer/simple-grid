@@ -1,12 +1,11 @@
 $grid-debug: true;
-
 $grid-settings: (
-'separate-rows': true
+    separate-rows: true
 );
-
-@import '../../grid.scss';
+@import '../../grid';
 
 #content-wrap {
-    // width: 1244px;
+    width: 1244px;
     margin: 0 auto;
+    @include grid-maker;
 }
