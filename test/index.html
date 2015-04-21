@@ -37,14 +37,17 @@
             node = document.getElementById('content-wrap');
 
 
-        nodes.forEach(function (el) {
+        for (var n = 0; nodes.length > n; n++) {
+            var el = nodes[n];
             var str = '<section class="row">'
-            el.forEach(function (el) {
-                str += '<div col-span="'+el+'">'+el+'</div>';
-            });
+
+            for(var e = 0; el.length > e; e++) {
+                var col = el[e];
+                str += '<div col-span="'+col+'">'+col+'</div>';
+            }
             str += '</section>';
             html += str;
-        });
+        }
 
         node.innerHTML += html;
     </script>
