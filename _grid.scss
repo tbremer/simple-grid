@@ -3,43 +3,45 @@
 @import "lib/settings";
 
 .#{get(wrapper)} {
-	display: block;
-	box-sizing: border-box;
-	width: get(max-width);
-	@include clearfix;
-	@if $grid-debug == true or $grid-wrapper-debug == true {
-		@include debug(.2, -1);
-	}
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: get(max-width);
+    @include clearfix;
+    @if $grid-debug == true or $grid-wrapper-debug == true {
+        @include debug(.2, -1);
+    }
 
-	@if get(separate-rows) {
-		+ .#{get(wrapper)} {
-			margin-top: (get(margin-width) * .5);
-		}
-	}
+    @if get(separate-rows) {
+        + .#{get(wrapper)} {
+            margin-top: (get(margin-width) * .5);
+        }
+    }
 
-	[#{get(attribute)}] {
-		float: left;
-		box-sizing: border-box;
-		margin: 0 (get(margin-width) / 2);
-	}
+    [#{get(attribute)}] {
+        box-sizing: border-box;
+        float: left;
+        margin: 0 0 0 get(margin-width);
+        &:first-child {
+            margin-left: 0;
+        }
+    }
 
-	@for $i from 1 through get(column-count) {
-		[#{get(attribute)}="#{$i}"] {
-			$width-px: (get(max-width) * ($i / get(column-count)) - get(margin-width));
-			@if get(provide-min-width) {
-				min-width: $width-px;
-			}
+    @for $i from 1 through get(column-count) {
+        $width-px: (
+            get(max-width)
+            * ($i/get(column-count))
+            - (get(margin-width) - (strip-unit(get(margin-width)) / get(column-count)))
+        );
 
-			@if get(percent-based) {
-				width: percentage($width-px / get(max-width));
-			} @else {
-				width: $width-px;
-			}
+        [#{get(attribute)}="#{$i}"] {
+            width: $width-px;
 
-			@if $grid-debug == true or $grid-col-debug == true {
-				@include debug(1, -1);
-			}
-		}
-	}
+            @if $grid-debug == true or $grid-col-debug == true {
+                @include debug(1, -1);
+            }
+        }
+    }
 }
 
