@@ -2,6 +2,9 @@
 @import "lib/mixins";
 @import "lib/settings";
 
+$base-width: (100/get(column-count) + strip-unit(get(margin-width)) / get(column-count));
+@warn $base-width;
+
 .#{get(wrapper)} {
     display: block;
     margin: 0;
@@ -29,14 +32,12 @@
     }
 
     @for $i from 1 through get(column-count) {
-        $width-px: (
-            get(max-width)
-            * ($i/get(column-count))
-            - (get(margin-width) - (strip-unit(get(margin-width)) / get(column-count)))
-        );
+
+        $width: percentage(($base-width * $i)/100) - get(margin-width);
+        @warn $width;
 
         [#{get(attribute)}="#{$i}"] {
-            width: $width-px;
+            width: $width;
 
             @if $grid-debug == true or $grid-col-debug == true {
                 @include debug(1, -1);

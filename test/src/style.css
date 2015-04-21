@@ -14,7 +14,7 @@
     content: '';
     display: block;
     position: absolute;
-    background-color: rgba(13, 235, 242, 0.2);
+    background-color: rgba(13, 36, 242, 0.2);
     top: 0;
     left: 0;
     width: 100%;
@@ -35,150 +35,150 @@
       content: '';
       display: block;
       position: absolute;
-      background-color: #0dbdf2;
+      background-color: #520df2;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       z-index: -1; }
   .row [col-span="2"] {
-    width: 15.2%;
+    width: 15.33333%;
     position: relative; }
     .row [col-span="2"]:before {
       content: '';
       display: block;
       position: absolute;
-      background-color: #f2f20d;
+      background-color: #18f20d;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       z-index: -1; }
   .row [col-span="3"] {
-    width: 23.53333%;
+    width: 23.8%;
     position: relative; }
     .row [col-span="3"]:before {
       content: '';
       display: block;
       position: absolute;
-      background-color: #f20dd7;
+      background-color: #280df2;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       z-index: -1; }
   .row [col-span="4"] {
-    width: 31.86667%;
+    width: 32.26667%;
     position: relative; }
     .row [col-span="4"]:before {
       content: '';
       display: block;
       position: absolute;
-      background-color: #0df228;
+      background-color: #f2180d;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       z-index: -1; }
   .row [col-span="5"] {
-    width: 40.2%;
+    width: 40.73333%;
     position: relative; }
     .row [col-span="5"]:before {
       content: '';
       display: block;
       position: absolute;
-      background-color: #24f20d;
+      background-color: #f2d70d;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       z-index: -1; }
   .row [col-span="6"] {
-    width: 48.53333%;
+    width: 49.2%;
     position: relative; }
     .row [col-span="6"]:before {
       content: '';
       display: block;
       position: absolute;
-      background-color: #f2550d;
+      background-color: #550df2;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       z-index: -1; }
   .row [col-span="7"] {
-    width: 56.86667%;
+    width: 57.66667%;
     position: relative; }
     .row [col-span="7"]:before {
       content: '';
       display: block;
       position: absolute;
-      background-color: #f2460d;
+      background-color: #f20d8b;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       z-index: -1; }
   .row [col-span="8"] {
-    width: 65.2%;
+    width: 66.13333%;
     position: relative; }
     .row [col-span="8"]:before {
       content: '';
       display: block;
       position: absolute;
-      background-color: #f2aa0d;
+      background-color: #f20dc1;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       z-index: -1; }
   .row [col-span="9"] {
-    width: 73.53333%;
+    width: 74.6%;
     position: relative; }
     .row [col-span="9"]:before {
       content: '';
       display: block;
       position: absolute;
-      background-color: #f2740d;
+      background-color: #f20daa;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       z-index: -1; }
   .row [col-span="10"] {
-    width: 81.86667%;
+    width: 83.06667%;
     position: relative; }
     .row [col-span="10"]:before {
       content: '';
       display: block;
       position: absolute;
-      background-color: #0df22b;
+      background-color: #0d5df2;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       z-index: -1; }
   .row [col-span="11"] {
-    width: 90.2%;
+    width: 91.53333%;
     position: relative; }
     .row [col-span="11"]:before {
       content: '';
       display: block;
       position: absolute;
-      background-color: #f20dd7;
+      background-color: #65f20d;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       z-index: -1; }
   .row [col-span="12"] {
-    width: 98.53333%;
+    width: 100%;
     position: relative; }
     .row [col-span="12"]:before {
       content: '';
       display: block;
       position: absolute;
-      background-color: #110df2;
+      background-color: #f20db1;
       top: 0;
       left: 0;
       width: 100%;
