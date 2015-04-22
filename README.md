@@ -1,5 +1,5 @@
 #simple-grid
-----
+
 SCSS Fluid Grid system compliant down to IE8.
 
 1. No configuring! (*but you can if that's your thing…*)
