@@ -10,36 +10,34 @@ SCSS Fluid Grid system compliant down to IE8.
     - only 1kb out of the box.
     - .8kb when compressed
 
-#### Usage
+##Usage
 ```sass
 @import 'simple-grid/grid';
 
 @include simple-grid;
 ```
 
-#### Options
-name: `wrapper`
+## Options
+####wrapper
 description: class name for the block level rows
 default: `row`
 
-name: `attribute`
+####attribute
 description: class name for the block level rows
 default: `col-span`
 
-```scss
-$default-grid-settings: (
-    'wrapper': 'row', //
-    'attribute': 'col-span',
-    // COL CONFIG
-    'column-count': 12,
+####column-count
+description: how many columns make up a 'filled' row
+default: `12`
 
-    // SIZING
-    'max-width': 100%,
-    'margin-width': 1.6%,
+####max-width
+description: how full is full
+default: `100%`
 
-    // MISC CONFIGS
-    'separate-rows': false
-);
-```
+####margin-width
+description: space between columns (gutters)
+default: `100%`
 
-#### Why Attribute Selectors
+####separate-rows
+description: should we separate the block level rows?
+default: `true`
