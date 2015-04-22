@@ -1,11 +1,6 @@
-$grid-debug: true;
 $grid-settings: (
     separate-rows: true
 );
 @import '../../grid';
 
-#content-wrap {
-    width: 1244px;
-    margin: 0 auto;
-    @include grid-maker;
-}
+@include simple-grid;

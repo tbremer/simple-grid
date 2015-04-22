@@ -2,7 +2,7 @@
 @import "lib/mixins";
 @import "lib/settings";
 
-@mixin grid-maker {
+@mixin simple-grid {
     $base-width: (100/get(column-count) + strip-unit(get(margin-width)) / get(column-count));
 
     .#{get(wrapper)} {

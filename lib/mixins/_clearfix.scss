@@ -1,11 +1,11 @@
 @mixin clearfix {
-	&:before, &::before,
-	&:after, &::after {
+	&:before,
+	&:after {
 		content: " ";
 		display: table;
 	}
 
-	&:after, &::after {
+	&:after {
 		clear: both;
 	}
 }
