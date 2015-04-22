@@ -2,6 +2,17 @@
 
 SCSS Fluid Grid system compliant down to IE8.
 
+- [simple-grid](#)
+	- [Usage](#)
+	- [Options](#)
+			- [wrapper](#)
+			- [attribute](#)
+			- [column-count](#)
+			- [max-width](#)
+			- [margin-width](#)
+			- [separate-rows](#)
+
+##Why
 1. No configuring! (*but you can if that's your thing…*)
 2. Debug mode!
 3. Works in all major browsers
@@ -41,3 +52,5 @@ default: `100%`
 ####separate-rows
 description: should we separate the block level rows?
 default: `true`
+
+**Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
