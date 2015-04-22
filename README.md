@@ -6,12 +6,12 @@ SCSS Fluid Grid system compliant down to IE8.
 	- [Why](#)
 	- [Usage](#)
 	- [Options](#)
-			- [wrapper](#)
-			- [attribute](#)
-			- [column-count](#)
-			- [max-width](#)
-			- [margin-width](#)
-			- [separate-rows](#)
+		- [wrapper](#)
+		- [attribute](#)
+		- [column-count](#)
+		- [max-width](#)
+		- [margin-width](#)
+		- [separate-rows](#)
 
 ##Why
 1. No configuring! (*but you can if that's your thing…*)
