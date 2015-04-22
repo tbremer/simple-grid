@@ -29,6 +29,7 @@ SCSS Fluid Grid system compliant down to IE8.
 ```
 
 ## Options
+*options passed as  SASS Map example below*
 ####wrapper
 description: class name for the block level rows
 default: `row`
@@ -47,11 +48,23 @@ default: `100%`
 
 ####margin-width
 description: space between columns (gutters)
-default: `100%`
+default: `1.6%`
 
 ####separate-rows
 description: should we separate the block level rows?
 default: `true`
+
+####options example
+```scss
+$grid-options: (
+    wrapper: 'row',
+    attribute: 'col-span',
+    column-count: 12,
+    max-width: 100%,
+    margin-width: 1.6%,
+    separate-rows: false
+);
+```
 
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
 **Edited with** [stackedit](https://stackedit.io/)
