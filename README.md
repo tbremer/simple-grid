@@ -23,12 +23,14 @@ SCSS Fluid Grid system compliant down to IE8.
 
 ##Usage
 ```sass
+// SCSS File.
 @import 'simple-grid/grid';
 
 @include simple-grid;
 ```
 
 ```html
+<!-- HTML File -->
 <section class=“row”>
     <div col-span=“4”>4 columns!</div>
     <div col-span=“6”>6 columns!</div>
