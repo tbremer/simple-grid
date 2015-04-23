@@ -75,4 +75,5 @@ $grid-options: (
 ```
 
 **Table of Contents**  *generated with [DocToc](http://doctoc.herokuapp.com/)*
+
 **Edited with** [stackedit](https://stackedit.io/)
